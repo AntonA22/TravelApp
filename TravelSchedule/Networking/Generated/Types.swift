@@ -60,7 +60,7 @@ extension APIProtocol {
     /// - Remark: HTTP `GET /v3.0/copyright/`.
     /// - Remark: Generated from `#/paths//v3.0/copyright//get(getCopyright)`.
     internal func getCopyright(
-        query: Operations.getCopyright.Input.Query,
+        query: Operations.getCopyright.Input.Query = .init(),
         headers: Operations.getCopyright.Input.Headers = .init()
     ) async throws -> Operations.getCopyright.Output {
         try await getCopyright(Operations.getCopyright.Input(
@@ -151,7 +151,7 @@ extension APIProtocol {
     /// - Remark: HTTP `GET /v3.0/stations_list/`.
     /// - Remark: Generated from `#/paths//v3.0/stations_list//get(getAllStations)`.
     internal func getAllStations(
-        query: Operations.getAllStations.Input.Query,
+        query: Operations.getAllStations.Input.Query = .init(),
         headers: Operations.getAllStations.Input.Headers = .init()
     ) async throws -> Operations.getAllStations.Output {
         try await getAllStations(Operations.getAllStations.Input(
@@ -1574,10 +1574,6 @@ internal enum Operations {
         internal struct Input: Sendable, Hashable {
             /// - Remark: Generated from `#/paths/v3.0/copyright/GET/query`.
             internal struct Query: Sendable, Hashable {
-                /// API key
-                ///
-                /// - Remark: Generated from `#/paths/v3.0/copyright/GET/query/apikey`.
-                internal var apikey: Swift.String
                 /// Формат ответа (json по умолчанию)
                 ///
                 /// - Remark: Generated from `#/paths/v3.0/copyright/GET/query/format`.
@@ -1585,13 +1581,8 @@ internal enum Operations {
                 /// Creates a new `Query`.
                 ///
                 /// - Parameters:
-                ///   - apikey: API key
                 ///   - format: Формат ответа (json по умолчанию)
-                internal init(
-                    apikey: Swift.String,
-                    format: Swift.String? = nil
-                ) {
-                    self.apikey = apikey
+                internal init(format: Swift.String? = nil) {
                     self.format = format
                 }
             }
@@ -1614,7 +1605,7 @@ internal enum Operations {
             ///   - query:
             ///   - headers:
             internal init(
-                query: Operations.getCopyright.Input.Query,
+                query: Operations.getCopyright.Input.Query = .init(),
                 headers: Operations.getCopyright.Input.Headers = .init()
             ) {
                 self.query = query
@@ -1713,10 +1704,6 @@ internal enum Operations {
         internal struct Input: Sendable, Hashable {
             /// - Remark: Generated from `#/paths/v3.0/nearest_stations/GET/query`.
             internal struct Query: Sendable, Hashable {
-                /// API key
-                ///
-                /// - Remark: Generated from `#/paths/v3.0/nearest_stations/GET/query/apikey`.
-                internal var apikey: Swift.String
                 /// Широта согласно WGS84
                 ///
                 /// - Remark: Generated from `#/paths/v3.0/nearest_stations/GET/query/lat`.
@@ -1756,7 +1743,6 @@ internal enum Operations {
                 /// Creates a new `Query`.
                 ///
                 /// - Parameters:
-                ///   - apikey: API key
                 ///   - lat: Широта согласно WGS84
                 ///   - lng: Долгота согласно WGS84
                 ///   - distance: Радиус охвата в километрах
@@ -1767,7 +1753,6 @@ internal enum Operations {
                 ///   - offset: Смещение относительно первого результата
                 ///   - limit: Ограничение на количество возвращаемых станций
                 internal init(
-                    apikey: Swift.String,
                     lat: Swift.Double,
                     lng: Swift.Double,
                     distance: Swift.Int,
@@ -1778,7 +1763,6 @@ internal enum Operations {
                     offset: Swift.Int? = nil,
                     limit: Swift.Int? = nil
                 ) {
-                    self.apikey = apikey
                     self.lat = lat
                     self.lng = lng
                     self.distance = distance
@@ -1908,10 +1892,6 @@ internal enum Operations {
         internal struct Input: Sendable, Hashable {
             /// - Remark: Generated from `#/paths/v3.0/search/GET/query`.
             internal struct Query: Sendable, Hashable {
-                /// API key
-                ///
-                /// - Remark: Generated from `#/paths/v3.0/search/GET/query/apikey`.
-                internal var apikey: Swift.String
                 /// Код станции отправления
                 ///
                 /// - Remark: Generated from `#/paths/v3.0/search/GET/query/from`.
@@ -1955,7 +1935,6 @@ internal enum Operations {
                 /// Creates a new `Query`.
                 ///
                 /// - Parameters:
-                ///   - apikey: API key
                 ///   - from: Код станции отправления
                 ///   - to: Код станции прибытия
                 ///   - format: Формат ответа, по умолчанию JSON
@@ -1967,7 +1946,6 @@ internal enum Operations {
                 ///   - result_timezone: Часовой пояс для дат и времени в ответе
                 ///   - transfers: Включить маршруты с пересадками (true/false)
                 internal init(
-                    apikey: Swift.String,
                     from: Swift.String,
                     to: Swift.String,
                     format: Swift.String? = nil,
@@ -1979,7 +1957,6 @@ internal enum Operations {
                     result_timezone: Swift.String? = nil,
                     transfers: Swift.Bool? = nil
                 ) {
-                    self.apikey = apikey
                     self.from = from
                     self.to = to
                     self.format = format
@@ -2110,10 +2087,6 @@ internal enum Operations {
         internal struct Input: Sendable, Hashable {
             /// - Remark: Generated from `#/paths/v3.0/schedule/GET/query`.
             internal struct Query: Sendable, Hashable {
-                /// API key
-                ///
-                /// - Remark: Generated from `#/paths/v3.0/schedule/GET/query/apikey`.
-                internal var apikey: Swift.String
                 /// Код станции
                 ///
                 /// - Remark: Generated from `#/paths/v3.0/schedule/GET/query/station`.
@@ -2153,7 +2126,6 @@ internal enum Operations {
                 /// Creates a new `Query`.
                 ///
                 /// - Parameters:
-                ///   - apikey: API key
                 ///   - station: Код станции
                 ///   - lang: Язык возвращаемой информации (например, ru_RU)
                 ///   - format: Формат ответа (json по умолчанию)
@@ -2164,7 +2136,6 @@ internal enum Operations {
                 ///   - system: Система кодирования для параметра station
                 ///   - result_timezone: Часовой пояс для отображения времени
                 internal init(
-                    apikey: Swift.String,
                     station: Swift.String,
                     lang: Swift.String? = nil,
                     format: Swift.String? = nil,
@@ -2175,7 +2146,6 @@ internal enum Operations {
                     system: Swift.String? = nil,
                     result_timezone: Swift.String? = nil
                 ) {
-                    self.apikey = apikey
                     self.station = station
                     self.lang = lang
                     self.format = format
@@ -2305,10 +2275,6 @@ internal enum Operations {
         internal struct Input: Sendable, Hashable {
             /// - Remark: Generated from `#/paths/v3.0/thread/GET/query`.
             internal struct Query: Sendable, Hashable {
-                /// API key
-                ///
-                /// - Remark: Generated from `#/paths/v3.0/thread/GET/query/apikey`.
-                internal var apikey: Swift.String
                 /// Идентификатор нитки
                 ///
                 /// - Remark: Generated from `#/paths/v3.0/thread/GET/query/uid`.
@@ -2340,7 +2306,6 @@ internal enum Operations {
                 /// Creates a new `Query`.
                 ///
                 /// - Parameters:
-                ///   - apikey: API key
                 ///   - uid: Идентификатор нитки
                 ///   - from: Код станции отправления
                 ///   - to: Код станции прибытия
@@ -2349,7 +2314,6 @@ internal enum Operations {
                 ///   - date: Дата, на которую необходимо получить список станций (формат YYYY-MM-DD)
                 ///   - show_systems: Система кодирования для ответа (например, yandex, esr, all)
                 internal init(
-                    apikey: Swift.String,
                     uid: Swift.String,
                     from: Swift.String? = nil,
                     to: Swift.String? = nil,
@@ -2358,7 +2322,6 @@ internal enum Operations {
                     date: Swift.String? = nil,
                     show_systems: Swift.String? = nil
                 ) {
-                    self.apikey = apikey
                     self.uid = uid
                     self.from = from
                     self.to = to
@@ -2486,10 +2449,6 @@ internal enum Operations {
         internal struct Input: Sendable, Hashable {
             /// - Remark: Generated from `#/paths/v3.0/nearest_settlement/GET/query`.
             internal struct Query: Sendable, Hashable {
-                /// API key
-                ///
-                /// - Remark: Generated from `#/paths/v3.0/nearest_settlement/GET/query/apikey`.
-                internal var apikey: Swift.String
                 /// Широта согласно WGS84
                 ///
                 /// - Remark: Generated from `#/paths/v3.0/nearest_settlement/GET/query/lat`.
@@ -2513,21 +2472,18 @@ internal enum Operations {
                 /// Creates a new `Query`.
                 ///
                 /// - Parameters:
-                ///   - apikey: API key
                 ///   - lat: Широта согласно WGS84
                 ///   - lng: Долгота согласно WGS84
                 ///   - distance: Радиус поиска ближайшего города (в километрах)
                 ///   - lang: Язык возвращаемой информации (например, ru_RU)
                 ///   - format: Формат ответа (json по умолчанию)
                 internal init(
-                    apikey: Swift.String,
                     lat: Swift.Double,
                     lng: Swift.Double,
                     distance: Swift.Int? = nil,
                     lang: Swift.String? = nil,
                     format: Swift.String? = nil
                 ) {
-                    self.apikey = apikey
                     self.lat = lat
                     self.lng = lng
                     self.distance = distance
@@ -2653,10 +2609,6 @@ internal enum Operations {
         internal struct Input: Sendable, Hashable {
             /// - Remark: Generated from `#/paths/v3.0/carrier/GET/query`.
             internal struct Query: Sendable, Hashable {
-                /// API key
-                ///
-                /// - Remark: Generated from `#/paths/v3.0/carrier/GET/query/apikey`.
-                internal var apikey: Swift.String
                 /// Код перевозчика
                 ///
                 /// - Remark: Generated from `#/paths/v3.0/carrier/GET/query/code`.
@@ -2676,19 +2628,16 @@ internal enum Operations {
                 /// Creates a new `Query`.
                 ///
                 /// - Parameters:
-                ///   - apikey: API key
                 ///   - code: Код перевозчика
                 ///   - system: Система кодирования (yandex, iata, sirena, express, esr)
                 ///   - lang: Язык возвращаемой информации (например, ru_RU)
                 ///   - format: Формат ответа (json по умолчанию)
                 internal init(
-                    apikey: Swift.String,
                     code: Swift.String,
                     system: Swift.String? = nil,
                     lang: Swift.String? = nil,
                     format: Swift.String? = nil
                 ) {
-                    self.apikey = apikey
                     self.code = code
                     self.system = system
                     self.lang = lang
@@ -2813,10 +2762,6 @@ internal enum Operations {
         internal struct Input: Sendable, Hashable {
             /// - Remark: Generated from `#/paths/v3.0/stations_list/GET/query`.
             internal struct Query: Sendable, Hashable {
-                /// API key
-                ///
-                /// - Remark: Generated from `#/paths/v3.0/stations_list/GET/query/apikey`.
-                internal var apikey: Swift.String
                 /// Язык возвращаемой информации (например, ru_RU)
                 ///
                 /// - Remark: Generated from `#/paths/v3.0/stations_list/GET/query/lang`.
@@ -2828,15 +2773,12 @@ internal enum Operations {
                 /// Creates a new `Query`.
                 ///
                 /// - Parameters:
-                ///   - apikey: API key
                 ///   - lang: Язык возвращаемой информации (например, ru_RU)
                 ///   - format: Формат ответа (json по умолчанию)
                 internal init(
-                    apikey: Swift.String,
                     lang: Swift.String? = nil,
                     format: Swift.String? = nil
                 ) {
-                    self.apikey = apikey
                     self.lang = lang
                     self.format = format
                 }
@@ -2860,7 +2802,7 @@ internal enum Operations {
             ///   - query:
             ///   - headers:
             internal init(
-                query: Operations.getAllStations.Input.Query,
+                query: Operations.getAllStations.Input.Query = .init(),
                 headers: Operations.getAllStations.Input.Headers = .init()
             ) {
                 self.query = query

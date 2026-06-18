@@ -14,17 +14,9 @@ protocol AllStationsServiceProtocol {
 /// `text/html`, а не `application/json`. Поэтому тело приходит как
 /// последовательность байтов (`HTTPBody`), которую мы собираем в `Data`
 /// и декодируем вручную через `JSONDecoder`.
-final class AllStationsService: AllStationsServiceProtocol {
-    private let client: Client
-    private let apikey: String
-
-    init(client: Client, apikey: String) {
-        self.client = client
-        self.apikey = apikey
-    }
-
+final class AllStationsService: BaseAPIService, AllStationsServiceProtocol {
     func getAllStations() async throws -> AllStations {
-        let response = try await client.getAllStations(query: .init(apikey: apikey))
+        let response = try await client.getAllStations(query: .init())
         let responseBody = try response.ok.body.html
 
         let limit = 50 * 1024 * 1024 // 50 МБ

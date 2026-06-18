@@ -9,21 +9,10 @@ protocol RouteStationsServiceProtocol {
 }
 
 /// Сервис «Список станций следования» (нитка) — `/v3.0/thread/`.
-final class RouteStationsService: RouteStationsServiceProtocol {
-    private let client: Client
-    private let apikey: String
-
-    init(client: Client, apikey: String) {
-        self.client = client
-        self.apikey = apikey
-    }
-
+final class RouteStationsService: BaseAPIService, RouteStationsServiceProtocol {
     func getRouteStations(uid: String) async throws -> RouteStations {
         let response = try await client.getRouteStations(
-            query: .init(
-                apikey: apikey,
-                uid: uid
-            )
+            query: .init(uid: uid)
         )
         return try response.ok.body.json
     }

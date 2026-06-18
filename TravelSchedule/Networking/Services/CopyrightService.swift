@@ -9,17 +9,9 @@ protocol CopyrightServiceProtocol {
 }
 
 /// Сервис «Копирайт Яндекс Расписаний» — `/v3.0/copyright/`.
-final class CopyrightService: CopyrightServiceProtocol {
-    private let client: Client
-    private let apikey: String
-
-    init(client: Client, apikey: String) {
-        self.client = client
-        self.apikey = apikey
-    }
-
+final class CopyrightService: BaseAPIService, CopyrightServiceProtocol {
     func getCopyright() async throws -> Copyright {
-        let response = try await client.getCopyright(query: .init(apikey: apikey))
+        let response = try await client.getCopyright(query: .init())
         return try response.ok.body.json
     }
 }

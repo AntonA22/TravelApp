@@ -9,22 +9,10 @@ protocol ScheduleBetweenStationsServiceProtocol {
 }
 
 /// Сервис «Расписание рейсов между станциями» — `/v3.0/search/`.
-final class ScheduleBetweenStationsService: ScheduleBetweenStationsServiceProtocol {
-    private let client: Client
-    private let apikey: String
-
-    init(client: Client, apikey: String) {
-        self.client = client
-        self.apikey = apikey
-    }
-
+final class ScheduleBetweenStationsService: BaseAPIService, ScheduleBetweenStationsServiceProtocol {
     func getSchedule(from: String, to: String) async throws -> Segments {
         let response = try await client.getSchedualBetweenStations(
-            query: .init(
-                apikey: apikey,
-                from: from,
-                to: to
-            )
+            query: .init(from: from, to: to)
         )
         return try response.ok.body.json
     }

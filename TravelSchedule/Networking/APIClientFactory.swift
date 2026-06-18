@@ -3,12 +3,13 @@ import OpenAPIRuntime
 import OpenAPIURLSession
 
 /// Фабрика, собирающая сгенерированный `Client` поверх `URLSession`-транспорта.
+/// API-ключ добавляется ко всем запросам через `AuthMiddleware`.
 enum APIClientFactory {
-    /// Готовый клиент API Яндекс Расписаний.
     static func makeClient() -> Client {
         Client(
             serverURL: Constants.baseURL,
-            transport: URLSessionTransport()
+            transport: URLSessionTransport(),
+            middlewares: [AuthMiddleware(apikey: Constants.apiKey)]
         )
     }
 }

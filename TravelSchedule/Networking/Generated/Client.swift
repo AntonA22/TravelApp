@@ -60,13 +60,6 @@ internal struct Client: APIProtocol {
                     in: &request,
                     style: .form,
                     explode: true,
-                    name: "apikey",
-                    value: input.query.apikey
-                )
-                try converter.setQueryItemAsURI(
-                    in: &request,
-                    style: .form,
-                    explode: true,
                     name: "format",
                     value: input.query.format
                 )
@@ -130,13 +123,6 @@ internal struct Client: APIProtocol {
                     method: .get
                 )
                 suppressMutabilityWarning(&request)
-                try converter.setQueryItemAsURI(
-                    in: &request,
-                    style: .form,
-                    explode: true,
-                    name: "apikey",
-                    value: input.query.apikey
-                )
                 try converter.setQueryItemAsURI(
                     in: &request,
                     style: .form,
@@ -260,13 +246,6 @@ internal struct Client: APIProtocol {
                     method: .get
                 )
                 suppressMutabilityWarning(&request)
-                try converter.setQueryItemAsURI(
-                    in: &request,
-                    style: .form,
-                    explode: true,
-                    name: "apikey",
-                    value: input.query.apikey
-                )
                 try converter.setQueryItemAsURI(
                     in: &request,
                     style: .form,
@@ -401,13 +380,6 @@ internal struct Client: APIProtocol {
                     in: &request,
                     style: .form,
                     explode: true,
-                    name: "apikey",
-                    value: input.query.apikey
-                )
-                try converter.setQueryItemAsURI(
-                    in: &request,
-                    style: .form,
-                    explode: true,
                     name: "station",
                     value: input.query.station
                 )
@@ -531,13 +503,6 @@ internal struct Client: APIProtocol {
                     in: &request,
                     style: .form,
                     explode: true,
-                    name: "apikey",
-                    value: input.query.apikey
-                )
-                try converter.setQueryItemAsURI(
-                    in: &request,
-                    style: .form,
-                    explode: true,
                     name: "uid",
                     value: input.query.uid
                 )
@@ -647,13 +612,6 @@ internal struct Client: APIProtocol {
                     in: &request,
                     style: .form,
                     explode: true,
-                    name: "apikey",
-                    value: input.query.apikey
-                )
-                try converter.setQueryItemAsURI(
-                    in: &request,
-                    style: .form,
-                    explode: true,
                     name: "lat",
                     value: input.query.lat
                 )
@@ -749,13 +707,6 @@ internal struct Client: APIProtocol {
                     in: &request,
                     style: .form,
                     explode: true,
-                    name: "apikey",
-                    value: input.query.apikey
-                )
-                try converter.setQueryItemAsURI(
-                    in: &request,
-                    style: .form,
-                    explode: true,
                     name: "code",
                     value: input.query.code
                 )
@@ -840,13 +791,6 @@ internal struct Client: APIProtocol {
                     method: .get
                 )
                 suppressMutabilityWarning(&request)
-                try converter.setQueryItemAsURI(
-                    in: &request,
-                    style: .form,
-                    explode: true,
-                    name: "apikey",
-                    value: input.query.apikey
-                )
                 try converter.setQueryItemAsURI(
                     in: &request,
                     style: .form,
