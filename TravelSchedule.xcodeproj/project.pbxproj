@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0111C8A040A40768A7B29B5B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D271CE00028C0119F2D57B /* Client.swift */; };
+		150232923FF5C2DD4E1FB246 /* CarrierService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3FE3E3110A0137A13F93A /* CarrierService.swift */; };
+		18AA23771B41221024D275AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0697E89031326A615DBD5A3 /* Constants.swift */; };
+		2584C5A0CE2E289D1706BD0F /* ScheduleBetweenStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8393816712FCC472FA756B9B /* ScheduleBetweenStationsService.swift */; };
+		59B86DE070CD1E38CCDC3462 /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 88C9079622B382ABC6CB9B50 /* OpenAPIURLSession */; };
+		5EB20B5156AA1A9BA850E41A /* NearestCityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD6C990BE064E44EFF41B0 /* NearestCityService.swift */; };
+		63E17FF0B9E54C879DD07F11 /* AllStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862EF135E65EB22ACC9EE7A /* AllStationsService.swift */; };
+		7007E9139DC48FDC8FA0A7EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79EA44D716041550E51D2FB /* Foundation.framework */; };
+		7B14B144EBBB07E67D1198FF /* CopyrightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2CC6251EAB40C0A6E0F8DB /* CopyrightService.swift */; };
+		8942AB34CF37F31C209AAB59 /* StationScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7AF9A36F20AC8C3842DC99 /* StationScheduleService.swift */; };
+		9097D8B5C32A9D23AAB10AD4 /* TravelScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D55E077FD9A47474798B9 /* TravelScheduleApp.swift */; };
+		A0BD8B6CA8FEE21BBBA1DC2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9EFE5B725B4C4975FDFA3 /* ContentView.swift */; };
+		C1970E5C443AA71D069ACAAC /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = A354AE954882E18C46ECFBE6 /* OpenAPIRuntime */; };
+		CA19BD81DD212A389C78B277 /* RouteStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB406A64902EFADC934BE3C /* RouteStationsService.swift */; };
+		CCFA20901495709EC00C7E66 /* APIClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5FF9B63F0329B52B15C8F7 /* APIClientFactory.swift */; };
+		DE84CC7FD0E73B341279DC6F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164BE532805C4C876D16395E /* Types.swift */; };
+		FE516AB077D39C39B6506B78 /* NearestStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E6445D569464FAE1F2FD9 /* NearestStationsService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A2CC6251EAB40C0A6E0F8DB /* CopyrightService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CopyrightService.swift; path = Networking/Services/CopyrightService.swift; sourceTree = "<group>"; };
+		0CE9EFE5B725B4C4975FDFA3 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		164BE532805C4C876D16395E /* Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Types.swift; path = Networking/Generated/Types.swift; sourceTree = "<group>"; };
+		19EE103E0AE1C2C04FFA75F2 /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5FF9B63F0329B52B15C8F7 /* APIClientFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIClientFactory.swift; path = Networking/APIClientFactory.swift; sourceTree = "<group>"; };
+		23E3FE3E3110A0137A13F93A /* CarrierService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CarrierService.swift; path = Networking/Services/CarrierService.swift; sourceTree = "<group>"; };
+		4E0D55E077FD9A47474798B9 /* TravelScheduleApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
+		530E6445D569464FAE1F2FD9 /* NearestStationsService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NearestStationsService.swift; path = Networking/Services/NearestStationsService.swift; sourceTree = "<group>"; };
+		54DD6C990BE064E44EFF41B0 /* NearestCityService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NearestCityService.swift; path = Networking/Services/NearestCityService.swift; sourceTree = "<group>"; };
+		59A64221BC5A0BFD7EC7478C /* openapi-generator-config.yaml */ = {isa = PBXFileReference; includeInIndex = 1; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
+		7862EF135E65EB22ACC9EE7A /* AllStationsService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllStationsService.swift; path = Networking/Services/AllStationsService.swift; sourceTree = "<group>"; };
+		8393816712FCC472FA756B9B /* ScheduleBetweenStationsService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduleBetweenStationsService.swift; path = Networking/Services/ScheduleBetweenStationsService.swift; sourceTree = "<group>"; };
+		B0697E89031326A615DBD5A3 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Networking/Constants.swift; sourceTree = "<group>"; };
+		C8D62235A8371E8DAADABAD1 /* openapi.yaml */ = {isa = PBXFileReference; includeInIndex = 1; path = openapi.yaml; sourceTree = "<group>"; };
+		D0D271CE00028C0119F2D57B /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Networking/Generated/Client.swift; sourceTree = "<group>"; };
+		DDB406A64902EFADC934BE3C /* RouteStationsService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteStationsService.swift; path = Networking/Services/RouteStationsService.swift; sourceTree = "<group>"; };
+		E79EA44D716041550E51D2FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ED7AF9A36F20AC8C3842DC99 /* StationScheduleService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StationScheduleService.swift; path = Networking/Services/StationScheduleService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADEFCEDF648466D0126149BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7007E9139DC48FDC8FA0A7EF /* Foundation.framework in Frameworks */,
+				C1970E5C443AA71D069ACAAC /* OpenAPIRuntime in Frameworks */,
+				59B86DE070CD1E38CCDC3462 /* OpenAPIURLSession in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DC31BFC363A36ABE9FF54F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19EE103E0AE1C2C04FFA75F2 /* TravelSchedule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AEBF614FAAE474C074B0893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FE52AB0109F3C92B340526F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6617904CC8AABD2843D7C59F /* TravelSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				0CE9EFE5B725B4C4975FDFA3 /* ContentView.swift */,
+				1F5FF9B63F0329B52B15C8F7 /* APIClientFactory.swift */,
+				B0697E89031326A615DBD5A3 /* Constants.swift */,
+				D0D271CE00028C0119F2D57B /* Client.swift */,
+				164BE532805C4C876D16395E /* Types.swift */,
+				7862EF135E65EB22ACC9EE7A /* AllStationsService.swift */,
+				23E3FE3E3110A0137A13F93A /* CarrierService.swift */,
+				0A2CC6251EAB40C0A6E0F8DB /* CopyrightService.swift */,
+				54DD6C990BE064E44EFF41B0 /* NearestCityService.swift */,
+				530E6445D569464FAE1F2FD9 /* NearestStationsService.swift */,
+				DDB406A64902EFADC934BE3C /* RouteStationsService.swift */,
+				8393816712FCC472FA756B9B /* ScheduleBetweenStationsService.swift */,
+				ED7AF9A36F20AC8C3842DC99 /* StationScheduleService.swift */,
+				4E0D55E077FD9A47474798B9 /* TravelScheduleApp.swift */,
+				C8D62235A8371E8DAADABAD1 /* openapi.yaml */,
+				59A64221BC5A0BFD7EC7478C /* openapi-generator-config.yaml */,
+			);
+			name = TravelSchedule;
+			path = TravelSchedule;
+			sourceTree = "<group>";
+		};
+		6FE52AB0109F3C92B340526F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E79EA44D716041550E51D2FB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D00D307D6741CE7CCFC4214D = {
+			isa = PBXGroup;
+			children = (
+				3DC31BFC363A36ABE9FF54F1 /* Products */,
+				4AEBF614FAAE474C074B0893 /* Frameworks */,
+				6617904CC8AABD2843D7C59F /* TravelSchedule */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F48415A6C7B7F9826E4AF9C8 /* TravelSchedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F445F28E838BDCB54C09F0 /* Build configuration list for PBXNativeTarget "TravelSchedule" */;
+			buildPhases = (
+				E5A13061F784CA24B7728F7A /* Sources */,
+				ADEFCEDF648466D0126149BE /* Frameworks */,
+				BCC88D8C16C59301DA4862BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelSchedule;
+			packageProductDependencies = (
+				A354AE954882E18C46ECFBE6 /* OpenAPIRuntime */,
+				88C9079622B382ABC6CB9B50 /* OpenAPIURLSession */,
+			);
+			productName = TravelSchedule;
+			productReference = 19EE103E0AE1C2C04FFA75F2 /* TravelSchedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA8C82BC8A0A565CDF574D26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 8B907B12262B9D4051103CA9 /* Build configuration list for PBXProject "TravelSchedule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D00D307D6741CE7CCFC4214D;
+			minimizedProjectReferenceProxies = 0;
+			packageReferences = (
+				D7AADC0154057987B8D724EA /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
+				BAFDDA93FA00CECBC7C55190 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3DC31BFC363A36ABE9FF54F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F48415A6C7B7F9826E4AF9C8 /* TravelSchedule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC88D8C16C59301DA4862BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5A13061F784CA24B7728F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BD8B6CA8FEE21BBBA1DC2B /* ContentView.swift in Sources */,
+				CCFA20901495709EC00C7E66 /* APIClientFactory.swift in Sources */,
+				18AA23771B41221024D275AC /* Constants.swift in Sources */,
+				0111C8A040A40768A7B29B5B /* Client.swift in Sources */,
+				DE84CC7FD0E73B341279DC6F /* Types.swift in Sources */,
+				63E17FF0B9E54C879DD07F11 /* AllStationsService.swift in Sources */,
+				150232923FF5C2DD4E1FB246 /* CarrierService.swift in Sources */,
+				7B14B144EBBB07E67D1198FF /* CopyrightService.swift in Sources */,
+				5EB20B5156AA1A9BA850E41A /* NearestCityService.swift in Sources */,
+				FE516AB077D39C39B6506B78 /* NearestStationsService.swift in Sources */,
+				CA19BD81DD212A389C78B277 /* RouteStationsService.swift in Sources */,
+				2584C5A0CE2E289D1706BD0F /* ScheduleBetweenStationsService.swift in Sources */,
+				8942AB34CF37F31C209AAB59 /* StationScheduleService.swift in Sources */,
+				9097D8B5C32A9D23AAB10AD4 /* TravelScheduleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5A25907C8CAFA4AED8981EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.practicum.TravelSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74E6D1A7BDD50D27176C5C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		911739BD78412170AD5D70E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.practicum.TravelSchedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EBA914FEA1FAEED672EA651E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08F445F28E838BDCB54C09F0 /* Build configuration list for PBXNativeTarget "TravelSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A25907C8CAFA4AED8981EA3 /* Release */,
+				911739BD78412170AD5D70E6 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B907B12262B9D4051103CA9 /* Build configuration list for PBXProject "TravelSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E6D1A7BDD50D27176C5C04 /* Debug */,
+				EBA914FEA1FAEED672EA651E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BAFDDA93FA00CECBC7C55190 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-urlsession";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D7AADC0154057987B8D724EA /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-runtime";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88C9079622B382ABC6CB9B50 /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAFDDA93FA00CECBC7C55190 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
+			productName = OpenAPIURLSession;
+		};
+		A354AE954882E18C46ECFBE6 /* OpenAPIRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7AADC0154057987B8D724EA /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */;
+			productName = OpenAPIRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CA8C82BC8A0A565CDF574D26 /* Project object */;
+}
