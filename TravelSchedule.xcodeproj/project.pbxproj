@@ -3,13 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0877ACA3802E41716405FC89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE91D0DF37F36144D6D7B07F /* Foundation.framework */; };
 		0D86056981EDC495163C293E /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = CF89083EBEB3F7397A4E31B1 /* OpenAPIRuntime */; };
 		1CC4EE714607F2F1F276E4F3 /* NearestCityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E0AE8A8EAD426B9D273165 /* NearestCityService.swift */; };
+		2A0000000000000000000010 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000010 /* RootTabView.swift */; };
+		2A0000000000000000000011 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000011 /* SplashView.swift */; };
+		2A0000000000000000000012 /* TravelModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000012 /* TravelModels.swift */; };
+			2A0000000000000000000013 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000013 /* DemoData.swift */; };
+			2A0000000000000000000026 /* StationDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000026 /* StationDataStore.swift */; };
+			2A0000000000000000000028 /* CarrierDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000028 /* CarrierDataStore.swift */; };
+			2A0000000000000000000014 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000014 /* Colors.swift */; };
+		2A0000000000000000000015 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000015 /* ButtonStyles.swift */; };
+		2A0000000000000000000016 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000016 /* EmptyListView.swift */; };
+		2A0000000000000000000017 /* ErrorStateToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000017 /* ErrorStateToolbar.swift */; };
+		2A0000000000000000000018 /* MainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000018 /* MainSearchView.swift */; };
+		2A0000000000000000000019 /* CitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000019 /* CitySelectionView.swift */; };
+		2A0000000000000000000020 /* StationSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000020 /* StationSelectionView.swift */; };
+		2A0000000000000000000021 /* CarriersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000021 /* CarriersView.swift */; };
+		2A0000000000000000000022 /* CarrierFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000022 /* CarrierFilterView.swift */; };
+		2A0000000000000000000023 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000023 /* PlaceholderView.swift */; };
+		2A0000000000000000000024 /* AppErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000024 /* AppErrorView.swift */; };
+		2A0000000000000000000025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000025 /* Assets.xcassets */; };
+		2A0000000000000000000027 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000027 /* SettingsView.swift */; };
 		3EEC666A7C5CD7B03A08C9D2 /* APIClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F608A91A06441B317795CE /* APIClientFactory.swift */; };
 		58DB5FE47F85C8B10AA1734F /* RouteStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066B4EBE82CBDB16E0F3718 /* RouteStationsService.swift */; };
 		6CD68EFDC046A7DC98DA7CCF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A653C87C80DD406B1A9CF /* Constants.swift */; };
@@ -33,12 +52,31 @@
 		188EE09C17E5BEF6899B8BC4 /* BaseAPIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAPIService.swift; path = Networking/BaseAPIService.swift; sourceTree = "<group>"; };
 		2066B4EBE82CBDB16E0F3718 /* RouteStationsService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteStationsService.swift; path = Networking/Services/RouteStationsService.swift; sourceTree = "<group>"; };
 		27FBBFE815ECE1EAE4954B0C /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000010 /* RootTabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000011 /* SplashView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000012 /* TravelModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TravelModels.swift; sourceTree = "<group>"; };
+			2B0000000000000000000013 /* DemoData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+			2B0000000000000000000026 /* StationDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StationDataStore.swift; sourceTree = "<group>"; };
+			2B0000000000000000000028 /* CarrierDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarrierDataStore.swift; sourceTree = "<group>"; };
+			2B0000000000000000000014 /* Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2B0000000000000000000015 /* ButtonStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		2B0000000000000000000016 /* EmptyListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000017 /* ErrorStateToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorStateToolbar.swift; sourceTree = "<group>"; };
+		2B0000000000000000000018 /* MainSearchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainSearchView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000019 /* CitySelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000020 /* StationSelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StationSelectionView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000021 /* CarriersView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarriersView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000022 /* CarrierFilterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarrierFilterView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000023 /* PlaceholderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000024 /* AppErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppErrorView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B0000000000000000000027 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		30F608A91A06441B317795CE /* APIClientFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIClientFactory.swift; path = Networking/APIClientFactory.swift; sourceTree = "<group>"; };
 		487FD0FD840A7EBB32545AF1 /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		511B68F8A368B45AC4CF2407 /* CarrierService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CarrierService.swift; path = Networking/Services/CarrierService.swift; sourceTree = "<group>"; };
 		65F794FC052041FA8F2752D1 /* TravelScheduleApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
 		678F6F04109102F8631E2B08 /* NearestStationsService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NearestStationsService.swift; path = Networking/Services/NearestStationsService.swift; sourceTree = "<group>"; };
-		7BA0E860B8F228628216FA5B /* openapi.yaml */ = {isa = PBXFileReference; includeInIndex = 1; path = openapi.yaml; sourceTree = "<group>"; };
+		7BA0E860B8F228628216FA5B /* openapi.yaml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
 		8AD37427A66757864E501CF9 /* ScheduleBetweenStationsService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduleBetweenStationsService.swift; path = Networking/Services/ScheduleBetweenStationsService.swift; sourceTree = "<group>"; };
 		8EA156138BE5BA6FF7A9B700 /* StationScheduleService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StationScheduleService.swift; path = Networking/Services/StationScheduleService.swift; sourceTree = "<group>"; };
 		A4E0AE8A8EAD426B9D273165 /* NearestCityService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NearestCityService.swift; path = Networking/Services/NearestCityService.swift; sourceTree = "<group>"; };
@@ -49,7 +87,7 @@
 		C07A653C87C80DD406B1A9CF /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Networking/Constants.swift; sourceTree = "<group>"; };
 		D87D3D1BBB8E9B29E905E32A /* Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Types.swift; path = Networking/Generated/Types.swift; sourceTree = "<group>"; };
 		ED52AC7BF680CDF315B85318 /* AllStationsService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllStationsService.swift; path = Networking/Services/AllStationsService.swift; sourceTree = "<group>"; };
-		FCF839AA597003A746E10E9C /* openapi-generator-config.yaml */ = {isa = PBXFileReference; includeInIndex = 1; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
+		FCF839AA597003A746E10E9C /* openapi-generator-config.yaml */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +113,59 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2C0000000000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2B0000000000000000000010 /* RootTabView.swift */,
+				2B0000000000000000000011 /* SplashView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2C0000000000000000000002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B0000000000000000000012 /* TravelModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C0000000000000000000003 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+					2B0000000000000000000013 /* DemoData.swift */,
+					2B0000000000000000000026 /* StationDataStore.swift */,
+					2B0000000000000000000028 /* CarrierDataStore.swift */,
+				);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2C0000000000000000000004 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2B0000000000000000000014 /* Colors.swift */,
+				2B0000000000000000000015 /* ButtonStyles.swift */,
+				2B0000000000000000000016 /* EmptyListView.swift */,
+				2B0000000000000000000017 /* ErrorStateToolbar.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2C0000000000000000000005 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2B0000000000000000000018 /* MainSearchView.swift */,
+				2B0000000000000000000019 /* CitySelectionView.swift */,
+				2B0000000000000000000020 /* StationSelectionView.swift */,
+				2B0000000000000000000021 /* CarriersView.swift */,
+				2B0000000000000000000022 /* CarrierFilterView.swift */,
+				2B0000000000000000000023 /* PlaceholderView.swift */,
+				2B0000000000000000000024 /* AppErrorView.swift */,
+				2B0000000000000000000027 /* SettingsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		37FA4D78EC0EB52EFA690AAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +186,11 @@
 		A1AE529E7E8E93660161D6D4 /* TravelSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				2C0000000000000000000001 /* App */,
+				2C0000000000000000000002 /* Models */,
+				2C0000000000000000000003 /* Data */,
+				2C0000000000000000000004 /* UI */,
+				2C0000000000000000000005 /* Screens */,
 				27FBBFE815ECE1EAE4954B0C /* ContentView.swift */,
 				30F608A91A06441B317795CE /* APIClientFactory.swift */,
 				BFFD4C0363B0C6F965D773BB /* AuthMiddleware.swift */,
@@ -111,10 +207,10 @@
 				8AD37427A66757864E501CF9 /* ScheduleBetweenStationsService.swift */,
 				8EA156138BE5BA6FF7A9B700 /* StationScheduleService.swift */,
 				65F794FC052041FA8F2752D1 /* TravelScheduleApp.swift */,
+				2B0000000000000000000025 /* Assets.xcassets */,
 				7BA0E860B8F228628216FA5B /* openapi.yaml */,
 				FCF839AA597003A746E10E9C /* openapi-generator-config.yaml */,
 			);
-			name = TravelSchedule;
 			path = TravelSchedule;
 			sourceTree = "<group>";
 		};
@@ -169,13 +265,11 @@
 				Base,
 			);
 			mainGroup = 6DA94661FAB03CC2A124E2C4;
-			minimizedProjectReferenceProxies = 0;
 			packageReferences = (
 				A2C97DF5513BC1199C6E1537 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
 				7E24EFC745D5EE9F1AA67C3C /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
 				DB12683625D7CC8E7C39EF84 /* XCRemoteSwiftPackageReference "swift-http-types" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 17A3D226F487678A3C0A78CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -190,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0000000000000000000025 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +296,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1CD0FC605D9CE62DAFCA26D /* ContentView.swift in Sources */,
+				2A0000000000000000000010 /* RootTabView.swift in Sources */,
+				2A0000000000000000000011 /* SplashView.swift in Sources */,
+				2A0000000000000000000012 /* TravelModels.swift in Sources */,
+					2A0000000000000000000013 /* DemoData.swift in Sources */,
+					2A0000000000000000000026 /* StationDataStore.swift in Sources */,
+					2A0000000000000000000028 /* CarrierDataStore.swift in Sources */,
+					2A0000000000000000000014 /* Colors.swift in Sources */,
+				2A0000000000000000000015 /* ButtonStyles.swift in Sources */,
+				2A0000000000000000000016 /* EmptyListView.swift in Sources */,
+				2A0000000000000000000017 /* ErrorStateToolbar.swift in Sources */,
+				2A0000000000000000000018 /* MainSearchView.swift in Sources */,
+				2A0000000000000000000019 /* CitySelectionView.swift in Sources */,
+				2A0000000000000000000020 /* StationSelectionView.swift in Sources */,
+				2A0000000000000000000021 /* CarriersView.swift in Sources */,
+				2A0000000000000000000022 /* CarrierFilterView.swift in Sources */,
+				2A0000000000000000000023 /* PlaceholderView.swift in Sources */,
+				2A0000000000000000000024 /* AppErrorView.swift in Sources */,
+				2A0000000000000000000027 /* SettingsView.swift in Sources */,
 				3EEC666A7C5CD7B03A08C9D2 /* APIClientFactory.swift in Sources */,
 				C8A24C24F10867001F7146E7 /* AuthMiddleware.swift in Sources */,
 				C0801A33B6F63A145E6EC66B /* BaseAPIService.swift in Sources */,
@@ -340,16 +453,18 @@
 		4C25BE0016DD56DACB219CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU49UKVVFH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.practicum.TravelSchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,16 +478,18 @@
 		B2A2A5ECDCBBF7E37F2DE46F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU49UKVVFH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.practicum.TravelSchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
