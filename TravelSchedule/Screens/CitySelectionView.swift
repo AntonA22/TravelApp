@@ -59,6 +59,8 @@ struct CitySelectionView: View {
                     .tint(Color.travelPrimary)
                     .accessibilityLabel("Назад")
                 }
+
+                ErrorStateToolbar()
             }
         }
     }

@@ -65,14 +65,21 @@ struct CarriersView: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 26) {
-            Button {
-                dismiss()
-            } label: {
-                Image(systemName: "chevron.left")
-                    .font(.system(size: 24, weight: .semibold))
-                    .foregroundStyle(Color.travelPrimary)
+            HStack {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .font(.system(size: 24, weight: .semibold))
+                        .foregroundStyle(Color.travelPrimary)
+                }
+                .frame(width: 44, height: 44, alignment: .leading)
+                .accessibilityLabel("Назад")
+
+                Spacer()
+
+                ErrorStateMenuButton()
             }
-            .frame(width: 44, height: 44, alignment: .leading)
 
             Text(routeTitle)
                 .font(.system(size: 24, weight: .bold))

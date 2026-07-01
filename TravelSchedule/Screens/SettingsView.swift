@@ -22,6 +22,11 @@ struct SettingsView: View {
         .background(Color.travelBackground)
         .navigationTitle("")
         .toolbar(.hidden, for: .navigationBar)
+        .overlay(alignment: .topTrailing) {
+            ErrorStateMenuButton()
+                .padding(.top, 4)
+                .padding(.trailing, 16)
+        }
     }
 
     private var settingsRow: some View {
@@ -119,6 +124,8 @@ private struct UserAgreementView: View {
                         .foregroundStyle(Color.travelPrimary)
                 }
             }
+
+            ErrorStateToolbar()
         }
     }
 }

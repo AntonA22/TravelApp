@@ -19,5 +19,8 @@ struct AppErrorView: View {
         .background(Color.travelBackground)
         .navigationTitle(kind.title)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ErrorStateToolbar()
+        }
     }
 }

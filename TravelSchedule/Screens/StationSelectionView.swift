@@ -44,5 +44,8 @@ struct StationSelectionView: View {
         .navigationTitle("Выбор станции")
         .navigationBarTitleDisplayMode(.inline)
         .searchable(text: $searchText, prompt: "Введите запрос")
+        .toolbar {
+            ErrorStateToolbar()
+        }
     }
 }

@@ -41,6 +41,9 @@ struct MainSearchView: View {
         }
         .background(Color.travelBackground)
         .navigationTitle("")
+        .toolbar {
+            ErrorStateToolbar()
+        }
         .fullScreenCover(item: $activePicker) { direction in
             CitySelectionView(direction: direction) { point in
                 switch direction {

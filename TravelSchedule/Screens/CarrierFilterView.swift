@@ -67,14 +67,21 @@ struct CarrierFilterView: View {
     }
 
     private var backButton: some View {
-        Button {
-            dismiss()
-        } label: {
-            Image(systemName: "chevron.left")
-                .font(.system(size: 24, weight: .semibold))
-                .foregroundStyle(Color.travelPrimary)
+        HStack {
+            Button {
+                dismiss()
+            } label: {
+                Image(systemName: "chevron.left")
+                    .font(.system(size: 24, weight: .semibold))
+                    .foregroundStyle(Color.travelPrimary)
+            }
+            .frame(width: 44, height: 44, alignment: .leading)
+            .accessibilityLabel("Назад")
+
+            Spacer()
+
+            ErrorStateMenuButton()
         }
-        .frame(width: 44, height: 44, alignment: .leading)
     }
 
     private func toggle(_ period: DeparturePeriod) {

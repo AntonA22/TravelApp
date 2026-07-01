@@ -24,5 +24,8 @@ struct PlaceholderView: View {
         .background(Color.travelBackground)
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ErrorStateToolbar()
+        }
     }
 }
