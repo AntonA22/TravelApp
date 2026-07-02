@@ -8,5 +8,9 @@ enum Constants {
     /// Ваш API-ключ Яндекс Расписаний.
     /// Получить его можно в кабинете разработчика: https://yandex.ru/dev/rasp/
     /// ⚠️ Подставьте сюда собственный ключ перед запуском.
-    static let apiKey = "YOUR_YANDEX_RASP_API_KEY"
+    static let apiKey = ""
+
+    static var isAPIKeyConfigured: Bool {
+        !apiKey.isEmpty && apiKey != "YOUR_YANDEX_RASP_API_KEY"
+    }
 }
