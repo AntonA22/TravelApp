@@ -4,6 +4,8 @@ struct MainSearchView: View {
     @State private var fromPoint: RoutePoint?
     @State private var toPoint: RoutePoint?
     @State private var activePicker: PickerDirection?
+    @State private var selectedStory: TravelStory?
+    @State private var viewedStoryIDs = Set(["night", "city"])
 
     private var isSearchReady: Bool {
         fromPoint != nil && toPoint != nil
@@ -12,6 +14,8 @@ struct MainSearchView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 28) {
+                storiesCollection
+
                 routeSelector
 
                 if isSearchReady {
@@ -37,7 +41,7 @@ struct MainSearchView: View {
                 Spacer(minLength: 32)
             }
             .padding(.horizontal, 16)
-            .padding(.top, 48)
+            .padding(.top, 24)
         }
         .background(Color.travelBackground)
         .navigationTitle("")
@@ -55,6 +59,30 @@ struct MainSearchView: View {
                 activePicker = nil
             }
         }
+        .fullScreenCover(item: $selectedStory) { story in
+            StoriesView(
+                stories: DemoData.stories,
+                initialStory: story
+            ) { viewedStoryIDs.insert($0.id) }
+        }
+    }
+
+    private var storiesCollection: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 12) {
+                ForEach(DemoData.stories) { story in
+                    StoryPreviewButton(
+                        story: story,
+                        isViewed: viewedStoryIDs.contains(story.id)
+                    ) {
+                        viewedStoryIDs.insert(story.id)
+                        selectedStory = story
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+        }
+        .padding(.horizontal, -16)
     }
 
     private var routeSelector: some View {
@@ -93,7 +121,48 @@ struct MainSearchView: View {
         .padding(16)
         .background(Color.travelBlue)
         .clipShape(RoundedRectangle(cornerRadius: 20))
-        .padding(.top, 44)
+    }
+}
+
+private struct StoryPreviewButton: View {
+    let story: TravelStory
+    let isViewed: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            ZStack(alignment: .bottomLeading) {
+                Image(story.imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 92, height: 140)
+
+                LinearGradient(
+                    colors: [
+                        Color.clear,
+                        Color.black.opacity(0.72)
+                    ],
+                    startPoint: .center,
+                    endPoint: .bottom
+                )
+
+                Text(story.title)
+                    .font(.system(size: 12, weight: .regular))
+                    .foregroundStyle(.white)
+                    .lineLimit(3)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(8)
+            }
+            .frame(width: 92, height: 140)
+            .opacity(isViewed ? 0.48 : 1)
+            .overlay {
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(isViewed ? Color.clear : Color.travelBlue, lineWidth: 4)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(story.title)
     }
 }
 

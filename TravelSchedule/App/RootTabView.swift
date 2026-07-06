@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct RootTabView: View {
+    @Binding var isDarkThemeEnabled: Bool
+
     var body: some View {
         TabView {
             NavigationStack {
@@ -12,7 +14,7 @@ struct RootTabView: View {
             }
 
             NavigationStack {
-                SettingsView()
+                SettingsView(isDarkThemeEnabled: $isDarkThemeEnabled)
             }
             .tabItem {
                 Image(systemName: "gearshape.fill")

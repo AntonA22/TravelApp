@@ -30,7 +30,7 @@ struct CarriersView: View {
                     LazyVStack(spacing: 8) {
                         ForEach(carriers) { carrier in
                             NavigationLink {
-                                PlaceholderView(title: "Карточка перевозчика")
+                                CarrierDetailView(carrier: carrier)
                             } label: {
                                 CarrierRow(carrier: carrier)
                             }
