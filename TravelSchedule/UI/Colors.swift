@@ -9,4 +9,5 @@ extension Color {
     static let travelField = Color(uiColor: .secondarySystemBackground)
     static let travelCard = Color(uiColor: .tertiarySystemBackground)
     static let travelRouteCard = Color(uiColor: .systemGray5)
+    static let travelSeparator = Color(uiColor: .separator)
 }

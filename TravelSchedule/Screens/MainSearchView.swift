@@ -107,18 +107,20 @@ struct MainSearchView: View {
             }
             .background(Color.travelField)
             .clipShape(RoundedRectangle(cornerRadius: 20))
+            .frame(height: 96)
 
             Button {
                 swap(&fromPoint, &toPoint)
             } label: {
                 Image(systemName: "arrow.up.arrow.down")
-                    .font(.system(size: 20, weight: .bold))
-                    .frame(width: 44, height: 44)
+                    .font(.system(size: 18, weight: .bold))
+                    .frame(width: 36, height: 36)
             }
             .buttonStyle(CircleIconButtonStyle())
             .accessibilityLabel("Поменять местами")
         }
-        .padding(16)
+        .frame(height: 128)
+        .padding(.horizontal, 16)
         .background(Color.travelBlue)
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
@@ -189,9 +191,8 @@ private struct RoutePointButton: View {
 
                 Spacer()
             }
-            .frame(minHeight: 48)
+            .frame(height: 48)
             .padding(.horizontal, 16)
-            .padding(.vertical, 10)
         }
         .buttonStyle(.plain)
     }
