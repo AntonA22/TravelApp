@@ -29,6 +29,8 @@
 		2A0000000000000000000024 /* AppErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000024 /* AppErrorView.swift */; };
 		2A0000000000000000000025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000025 /* Assets.xcassets */; };
 		2A0000000000000000000027 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000027 /* SettingsView.swift */; };
+		2A0000000000000000000029 /* CarrierDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000029 /* CarrierDetailView.swift */; };
+		2A0000000000000000000030 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000000000000000000030 /* StoriesView.swift */; };
 		3EEC666A7C5CD7B03A08C9D2 /* APIClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F608A91A06441B317795CE /* APIClientFactory.swift */; };
 		58DB5FE47F85C8B10AA1734F /* RouteStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066B4EBE82CBDB16E0F3718 /* RouteStationsService.swift */; };
 		6CD68EFDC046A7DC98DA7CCF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A653C87C80DD406B1A9CF /* Constants.swift */; };
@@ -71,6 +73,8 @@
 		2B0000000000000000000024 /* AppErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppErrorView.swift; sourceTree = "<group>"; };
 		2B0000000000000000000025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0000000000000000000027 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000029 /* CarrierDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarrierDetailView.swift; sourceTree = "<group>"; };
+		2B0000000000000000000030 /* StoriesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		30F608A91A06441B317795CE /* APIClientFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIClientFactory.swift; path = Networking/APIClientFactory.swift; sourceTree = "<group>"; };
 		487FD0FD840A7EBB32545AF1 /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		511B68F8A368B45AC4CF2407 /* CarrierService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CarrierService.swift; path = Networking/Services/CarrierService.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				2B0000000000000000000023 /* PlaceholderView.swift */,
 				2B0000000000000000000024 /* AppErrorView.swift */,
 				2B0000000000000000000027 /* SettingsView.swift */,
+				2B0000000000000000000029 /* CarrierDetailView.swift */,
+				2B0000000000000000000030 /* StoriesView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				2A0000000000000000000023 /* PlaceholderView.swift in Sources */,
 				2A0000000000000000000024 /* AppErrorView.swift in Sources */,
 				2A0000000000000000000027 /* SettingsView.swift in Sources */,
+				2A0000000000000000000029 /* CarrierDetailView.swift in Sources */,
+				2A0000000000000000000030 /* StoriesView.swift in Sources */,
 				3EEC666A7C5CD7B03A08C9D2 /* APIClientFactory.swift in Sources */,
 				C8A24C24F10867001F7146E7 /* AuthMiddleware.swift in Sources */,
 				C0801A33B6F63A145E6EC66B /* BaseAPIService.swift in Sources */,

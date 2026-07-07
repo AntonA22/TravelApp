@@ -53,6 +53,9 @@ final class CarrierDataStore: ObservableObject {
 
             return Carrier(
                 name: name,
+                legalName: name,
+                email: "info@travel.example",
+                phone: "+7 (800) 000-00-00",
                 date: makeDateTitle(from: departure),
                 departure: makeTimeTitle(from: departure),
                 arrival: makeTimeTitle(from: arrival),

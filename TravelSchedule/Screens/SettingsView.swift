@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @Environment(\.colorScheme) private var colorScheme
+    @Binding var isDarkThemeEnabled: Bool
+    @State private var isAgreementPresented = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -22,10 +23,11 @@ struct SettingsView: View {
         .background(Color.travelBackground)
         .navigationTitle("")
         .toolbar(.hidden, for: .navigationBar)
-        .overlay(alignment: .topTrailing) {
-            ErrorStateMenuButton()
-                .padding(.top, 4)
-                .padding(.trailing, 16)
+        .fullScreenCover(isPresented: $isAgreementPresented) {
+            NavigationStack {
+                UserAgreementView()
+            }
+            .preferredColorScheme(isDarkThemeEnabled ? .dark : .light)
         }
     }
 
@@ -37,16 +39,15 @@ struct SettingsView: View {
 
             Spacer()
 
-            Toggle("", isOn: .constant(colorScheme == .dark))
+            Toggle("", isOn: $isDarkThemeEnabled)
                 .labelsHidden()
-                .allowsHitTesting(false)
         }
         .frame(height: 44)
     }
 
     private var agreementLink: some View {
-        NavigationLink {
-            UserAgreementView()
+        Button {
+            isAgreementPresented = true
         } label: {
             HStack {
                 Text("Пользовательское соглашение")

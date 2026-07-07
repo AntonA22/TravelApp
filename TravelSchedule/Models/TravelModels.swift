@@ -23,6 +23,9 @@ struct TravelStation: Identifiable, Hashable {
 struct Carrier: Identifiable, Hashable {
     let id = UUID()
     let name: String
+    let legalName: String
+    let email: String
+    let phone: String
     let date: String
     let departure: String
     let arrival: String
@@ -32,6 +35,23 @@ struct Carrier: Identifiable, Hashable {
     let logoText: String
     let logoColor: Color
     let transferTitle: String?
+}
+
+struct TravelStory: Identifiable, Hashable {
+    let id: String
+    let title: String
+    let subtitle: String
+    let imageName: String
+    let accentColor: Color
+    let pages: [TravelStoryPage]
+}
+
+struct TravelStoryPage: Identifiable, Hashable {
+    let id: String
+    let title: String
+    let subtitle: String
+    let imageName: String
+    let accentColor: Color
 }
 
 struct CarrierFilter: Hashable {

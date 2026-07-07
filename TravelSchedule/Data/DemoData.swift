@@ -74,6 +74,9 @@ enum DemoData {
     static let carriers: [Carrier] = [
         Carrier(
             name: "РЖД",
+            legalName: "ОАО «РЖД»",
+            email: "info@rzd.ru",
+            phone: "+7 (800) 775-00-00",
             date: "14 января",
             departure: "22:30",
             arrival: "08:15",
@@ -86,6 +89,9 @@ enum DemoData {
         ),
         Carrier(
             name: "ФГК",
+            legalName: "АО «ФГК»",
+            email: "info@fgk.ru",
+            phone: "+7 (495) 663-10-20",
             date: "15 января",
             departure: "01:15",
             arrival: "09:00",
@@ -98,6 +104,9 @@ enum DemoData {
         ),
         Carrier(
             name: "Урал Логистика",
+            legalName: "ООО «Урал Логистика»",
+            email: "support@ural-logistics.ru",
+            phone: "+7 (343) 222-18-11",
             date: "15 января",
             departure: "12:30",
             arrival: "21:00",
@@ -110,6 +119,9 @@ enum DemoData {
         ),
         Carrier(
             name: "Гранд Сервис Экспресс",
+            legalName: "АО ТК «Гранд Сервис Экспресс»",
+            email: "info@grandtrain.ru",
+            phone: "+7 (800) 775-54-53",
             date: "16 января",
             departure: "14:10",
             arrival: "23:50",
@@ -119,6 +131,101 @@ enum DemoData {
             logoText: "Г",
             logoColor: .purple,
             transferTitle: "С пересадкой"
+        )
+    ]
+
+    static let stories: [TravelStory] = [
+        TravelStory(
+            id: "mountains",
+            title: "Кабина машиниста",
+            subtitle: "Маршрут изнутри",
+            imageName: "StoryMountains",
+            accentColor: Color(red: 0.20, green: 0.45, blue: 0.85),
+            pages: [
+                TravelStoryPage(
+                    id: "mountains-1",
+                    title: "Кабина машиниста",
+                    subtitle: "Смотрите, как поездка начинается с первых минут маршрута.",
+                    imageName: "StoryMountains",
+                    accentColor: Color(red: 0.20, green: 0.45, blue: 0.85)
+                ),
+                TravelStoryPage(
+                    id: "mountains-2",
+                    title: "В дороге спокойно",
+                    subtitle: "Выберите удобный рейс и проверьте перевозчика заранее.",
+                    imageName: "StoryTickets",
+                    accentColor: Color(red: 0.12, green: 0.58, blue: 0.44)
+                )
+            ]
+        ),
+        TravelStory(
+            id: "tickets",
+            title: "Работа проводника",
+            subtitle: "Детали поездки",
+            imageName: "StoryTickets",
+            accentColor: Color(red: 0.85, green: 0.25, blue: 0.30),
+            pages: [
+                TravelStoryPage(
+                    id: "tickets-1",
+                    title: "Работа проводника",
+                    subtitle: "Расписание помогает подготовиться к маршруту и времени отправления.",
+                    imageName: "StoryTickets",
+                    accentColor: Color(red: 0.85, green: 0.25, blue: 0.30)
+                ),
+                TravelStoryPage(
+                    id: "tickets-2",
+                    title: "Проверяйте детали",
+                    subtitle: "В карточке перевозчика доступны контакты и основная информация.",
+                    imageName: "StoryNight",
+                    accentColor: Color(red: 0.92, green: 0.52, blue: 0.18)
+                )
+            ]
+        ),
+        TravelStory(
+            id: "night",
+            title: "Вагон в пути",
+            subtitle: "Место для паузы",
+            imageName: "StoryNight",
+            accentColor: Color(red: 0.36, green: 0.31, blue: 0.78),
+            pages: [
+                TravelStoryPage(
+                    id: "night-1",
+                    title: "Вагон в пути",
+                    subtitle: "Фильтры помогут найти удобное время отправления.",
+                    imageName: "StoryNight",
+                    accentColor: Color(red: 0.36, green: 0.31, blue: 0.78)
+                ),
+                TravelStoryPage(
+                    id: "night-2",
+                    title: "Без лишних пересадок",
+                    subtitle: "Сравнивайте варианты и оставляйте только подходящие рейсы.",
+                    imageName: "StoryMountains",
+                    accentColor: Color(red: 0.16, green: 0.56, blue: 0.78)
+                )
+            ]
+        ),
+        TravelStory(
+            id: "city",
+            title: "Дальние маршруты",
+            subtitle: "Поезд и новые места",
+            imageName: "StoryCity",
+            accentColor: Color(red: 0.25, green: 0.62, blue: 0.32),
+            pages: [
+                TravelStoryPage(
+                    id: "city-1",
+                    title: "Дальние маршруты",
+                    subtitle: "Выберите город, станцию и быстро найдите варианты маршрута.",
+                    imageName: "StoryCity",
+                    accentColor: Color(red: 0.25, green: 0.62, blue: 0.32)
+                ),
+                TravelStoryPage(
+                    id: "city-2",
+                    title: "Всё под рукой",
+                    subtitle: "Главный экран, Stories, фильтры и карточка перевозчика работают вместе.",
+                    imageName: "StoryTickets",
+                    accentColor: Color(red: 0.16, green: 0.50, blue: 0.76)
+                )
+            ]
         )
     ]
 }
